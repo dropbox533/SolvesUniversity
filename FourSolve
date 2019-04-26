@@ -1,0 +1,20 @@
+
+
+//Абрамов задание 39.Даны два действительных числа,вывести первое число,если оно больше второго и оба если это не так.
+
+import java.util.Scanner;
+public class SolveFour {
+    public static void main(String[] args) {
+
+        System.out.print("Введите два числа:" + " ");
+
+        Scanner s = new Scanner(System.in);
+        double a = s.nextDouble();
+        double b = s.nextDouble();
+
+        if (a > b)
+        { System.out.print(a); }
+        else if(a<b || a==b)
+        {System.out.print(a + " " + b );}
+    }
+}
