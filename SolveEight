@@ -1,0 +1,30 @@
+
+// Абрамов задание 76в.Проверить угрожает ли конь нашей фигуре,на шахматной доске.
+import java.util.Scanner;
+public class SolveEight {
+    public static void main(String[] args){
+
+        System.out.print("Введите кооррдинаты клетки,на которой стоит конь,затем  координаты другой фигуры: ");
+
+        int  k,l,m,n;
+
+        Scanner s = new Scanner(System.in);
+
+        k=s.nextInt();
+
+        l=s.nextInt();
+
+        m=s.nextInt();
+
+        n= s.nextInt();
+
+        if (((Math.abs(m-k)==1) && (Math.abs(n-l)==2))|| ((Math.abs(m-k)==2) && (Math.abs(n-l)==1)))
+        
+            { System.out.print("Конь угрожает вашей фигуре");}
+
+                 else {System.out.print("Конь не угрожает фигруре");}
+
+
+
+    }
+}
