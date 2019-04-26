@@ -1,0 +1,25 @@
+
+//Абрамов задание 67в.Найти последнюю цифру числа меньшего 100
+
+import java.util.Scanner;
+
+public class NineSolve{
+    public static void main(String[] args){
+
+        int n;
+
+        System.out.print("Ввведите число меньше 100: ");
+
+        Scanner s= new Scanner(System.in);
+
+        n=s.nextInt();
+
+        if(n>100)
+            {System.out.print("Вы ввели число,больше 100,введите другое число: ");
+
+              n=s.nextInt();}
+
+        else {System.out.print("Последняя цифра вашего числа:" + " " + n%10);}
+
+    }
+}
