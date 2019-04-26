@@ -1,0 +1,34 @@
+
+
+
+//Абрамов задание 59Б.Определить принадлежит ли точка к заштрихованной поверхности между двумя кругами с радиусами 1 и 0,5.
+
+import  java.util.Scanner;
+
+public class SixSolve {
+    public  static void main(String[] args){
+
+        System.out.print("Введите x и y: ");
+
+        double x,y;
+
+        Scanner s = new Scanner(System.in);
+
+        x=s.nextDouble();
+
+        y=s.nextDouble();
+
+        double firstRadius = 1;
+        double twistRadius = 0.5;
+
+        double h= Math.sqrt(x*x + y*y);
+
+        if(h<firstRadius && h>twistRadius)
+            {System.out.print("Точка принадлежит заштрихованной области");}
+
+        else System.out.print("Точка не принадлежит заштрихованной области");
+
+
+    }
+
+}
